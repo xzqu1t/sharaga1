@@ -1,0 +1,511 @@
+body {
+	min-width: 1040px;
+  	margin: 0;
+  	padding: 0;
+  	font-weight: 400;
+ 	font-size: 16px;
+  	line-height: 30px;
+  	font-family: "Arial", sans-serif;
+  	color: #404040;
+  	font-style: normal;
+  	background-color: white;
+
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container-wide {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.btn {
+	display: block;
+	background-color: #6670CC;
+	border-radius: 5px;
+	padding: 8px 20px;
+	font: inherit;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+.section-title {
+	margin: 0;
+	padding: 0;
+	font-size: 35px;
+}
+
+/* === Шапка сайта === */
+
+.main-header {
+	padding-top: 10px;
+	background-color: #cccccc;
+	padding-bottom: 10px;
+}
+
+.logo {
+	float: left;
+	margin-top: 10px;
+}
+
+.logo img {
+	background-color: #cccccc;
+}
+
+.phone {
+	float: right;
+	font-size: 20px;
+	color: #1F255C;
+	margin-right: 30px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.phone-btn {
+	float: right;
+	margin-top: 15px;
+	font-size: 0;
+	padding: 3px;
+	background-size: cover;
+	width: 35px;
+	height: 35px
+}
+
+.phone-img {
+	width: 100%;
+	height: 100%
+}
+
+/* === Слайдер ===*/
+
+.slider {
+	background-color: #A3B7E0;
+	
+}
+
+.slider .container-wide {
+	background: white url("images/slider.jpg") no-repeat center;
+	background-size: cover;
+	height: 350px;
+	padding-top: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.btn-left {
+	float: left;
+}
+
+.btn-right {
+	float: right;
+}
+
+.slider-title {
+	margin: 10px 30px 0 50px;
+	font-size: 30px;
+	float: left;
+}
+
+.slider-description {
+	margin: 0 0 0 50px;
+	max-width: 425px;
+	float: left;
+}
+
+.arrow-right {
+    cursor: pointer;
+    height: 100px;
+    width: 80px;
+    position: relative;
+    margin: 0px;
+    float: right;
+    margin-top: 100px;
+}
+.arrow-right-top, 
+.arrow-right-bottom {
+    background: white;
+    height: 10px;
+    left: -30px;
+    position: absolute;
+    top: 60px;
+    width: 60px;
+}
+.arrow-right-top {
+    top: 64px;
+}
+.arrow-right-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+}
+.arrow-right-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+.arrow-right-top::after, 
+.arrow-right-bottom::after {
+    background: #1F255C;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+}
+.arrow-right-top::after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+}
+.arrow-right-bottom::after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+}
+.arrow-right:hover .arrow-right-top::after {
+    left: 0;
+    transition-delay: 0.15s;
+}
+.arrow-right:hover .arrow-right-bottom::after {
+    right: 0;
+    transition-delay: 0s;
+}
+
+.arrow-left {
+    cursor: pointer;
+    height: 100px;
+    width: 80px;
+    position: relative;
+    margin: 0px;
+    float: left;
+    margin-top: 100px;
+}
+.arrow-left-top, 
+.arrow-left-bottom {
+    background: white;
+    height: 10px;
+    left: 40px;
+    position: absolute;
+    top: 60px;
+    width: 60px;
+}
+.arrow-left-top {
+    top: 64px;
+}
+.arrow-left-top {
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+}
+.arrow-left-bottom {
+    transform: rotate(45deg);
+    transform-origin: top left
+}
+.arrow-left-top::after, 
+.arrow-left-bottom::after {
+    background: #1F255C;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+}
+.arrow-left-top::after {
+    right: 100%;
+    left: 0;
+    transition-delay: 0s;
+}
+.arrow-left-bottom::after {
+    right: 0;
+    left: 100%;
+    transition-delay: 0.15s;
+}
+.arrow-left:hover .arrow-left-top::after {
+    right: 0;
+    transition-delay: 0.15s;
+}
+.arrow-left:hover .arrow-left-bottom::after {
+    left: 0;
+    transition-delay: 0s;
+}
+
+/* === Особенности === */
+
+.features {
+	padding: 100px 0;
+	background-color:#424242;
+}
+
+.feature-items {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.feature-item {
+	float: left;
+	width: 266px;
+	border-right: 1px solid black;
+	text-align: center;
+	color: white;	
+}
+
+.feature-item:last-child {
+	border-right: none;
+}
+
+.feature-description {
+	margin: 15px auto 0;
+	max-width: 200px;
+	text-align: justify;
+}
+
+/* === Товары ===*/
+
+.goods {
+	padding: 50px 0;
+}
+
+.goods .section-title {
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+
+.good-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.good-photo {
+	width: 100%;
+	max-height: 300px; 
+}
+
+.good-item {
+	border: 1px solid black;
+	float: left;
+	width: 323px;
+	margin: 30px 0;
+	margin-right: 50px;
+	border-radius: 3px;
+}
+
+.good-item:nth-of-type(odd) {
+	margin-left: 50px;
+}
+
+.good-item .btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.good-name {
+	margin: 0 auto;
+	max-width: 250px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+.good-price {
+	margin: 10px 35px 0 0;
+	font-weight: bold;
+	float: right;
+	font-size: 19px;
+}
+
+.good-item:hover {
+ 	box-shadow: 1px 1px 10px #34495e;
+  	-webkit-transform: translateX(-7px);
+  	transform: translateX(-7px);
+  	transition: all 0.3s ease;
+}
+
+.btn-buy {
+	clear: both;
+	float: left;
+	margin-left: 35px;
+}
+
+.btn-property {
+	float: right;
+	margin-right: 35px;
+}
+
+.filter {
+	margin-left: 50px;
+	font-size: 15px;
+}
+
+.filter-item {
+	color: #3C54B4;
+	text-decoration: none;
+}
+
+.filter-item:nth-of-type(n + 2){
+	margin-left: 15px;
+}
+
+/* === Блок с консультантами === */
+
+.consultants {
+	padding: 50px 0;
+	background-color: #A3B7E0;
+}
+
+.consultant-items {
+	display: table;
+	margin-top: 30px;
+}	
+
+.consultant-item:last-of-type{
+	margin-top: 20px;
+}
+
+.consultant-name {
+	font-size: 23px;
+	padding: 0;
+	padding-left: 10px;
+}
+
+.consultant-description {
+	padding-left: 10px;
+}
+
+.name2 {
+	padding-top: 27px;
+}
+
+.photo2 {
+	padding-top: 30px;
+}
+
+/* === Бренды === */
+
+.brands {
+	padding: 50px 30px;
+	background-color: #3C54B4;
+}
+
+.brand-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.brand-item {
+	float: left;
+	margin-right: 25px
+}
+
+.brand-item:last-child {
+	margin-right: 0;
+}
+
+/* === Отзывы === */
+
+.reviews {
+	padding: 50px 0;
+}
+
+.review-items {
+	list-style: none;
+	margin: 50px 0 0 0;
+	padding: 0;
+}
+
+.review-item {
+	float: left;
+	text-align: center;
+}
+
+.review-item:first-child {
+	margin-right: 40px
+}
+
+.review-item cite {
+	font-size: 20px;
+}
+
+.review-photo {
+	border-radius: 50%;
+}
+
+.review-description {
+	max-width: 300px;
+	text-align: left;
+}
+
+/* === Блок с формой === */
+
+.feedback {
+	padding: 70px 0 100px;
+	background-color: #A3B7E0;
+}
+
+.compain-description {
+	margin-top: 40px;
+}
+
+.feedback-form {
+	padding: 0px;
+	padding-top: 15px;
+	margin: 0px;
+}
+
+.feedback-item {
+	padding: 0;
+	border: none;
+	margin: 0 0 20px 0;
+}
+
+.feedback-item label {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.feedback-item input {
+	width: 100%;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	font: inherit;
+	font-weight: bold;
+	background-color: #88A4D7;
+	border: none;
+}
+
+.feedback .subscribe-button {
+	margin-top: 30px;
+	border: none;
+}
+
+/* === Якорь ===*/
+
+#anchor {
+	position: absolute;
+}
+
+.top-scroll {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100px;
+	background: rgba(0, 0, 0, 0.3) url(images/top-scroll.png) no-repeat center;
+	background-size: cover;
+	height: 100px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}

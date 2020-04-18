@@ -7,10 +7,20 @@
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/loader.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+	<script type="text/javascript">
+	$(window).on('load', function () {
+		var $preloader = $('#p_prldr'),
+			$svg_anm   = $preloader.find('.svg_anm');
+		$svg_anm.fadeOut();
+		$preloader.delay(500).fadeOut('slow');
+	});</script>
 </head>
 <body>
-	
+	<div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
+
 	<a id="anchor"></a>
 	<header class="main-header">
 		<div class="container clearfix">
@@ -212,8 +222,5 @@
 		isAutoplay: true
 	  });
 	</script>
-
-
-
 </body>
 </html>

@@ -142,7 +142,7 @@ body {
 }
 
 .good-item {
-	border: 1px solid black;
+	border: 1px solid gray;
 	float: left;
 	width: 323px;
 	margin: 30px 0;
@@ -173,22 +173,11 @@ body {
 	font-size: 19px;
 }
 
-.good-item:hover {
- 	box-shadow: 1px 1px 10px #34495e;
-  	-webkit-transform: translateX(-7px);
-  	transform: translateX(-7px);
-  	transition: all 0.3s ease;
-}
 
 .btn-buy {
 	clear: both;
 	float: left;
-	margin-left: 35px;
-}
-
-.btn-property {
-	float: right;
-	margin-right: 35px;
+	margin-left: 35% ;
 }
 
 .filter {
@@ -197,7 +186,7 @@ body {
 }
 
 .filter-item {
-	color: #3C54B4;
+	color: rgb(56, 56, 56);
 	text-decoration: none;
 }
 

@@ -1,0 +1,185 @@
+
+#buttons {
+	overflow: hidden;
+	width: 100%;
+}
+
+#buttons > input {
+	display: hidden;
+}
+
+.slide1, .slide2 {
+	position: absolute;
+	width: inherit;
+	opacity: 0;
+	z-index: 0;
+}
+
+.slide3 {
+	z-index: 0;
+	opacity: 0;
+	width: inherit;
+}
+
+.slide {
+	width: 50%;
+}
+
+#check1 {
+	height: 25px;
+}
+#check2 {
+	height: 25px;
+}
+#check3 {
+	height: 25px;
+}
+
+#buttons > #check1:checked ~ .slide1,
+#buttons > #check2:checked ~ .slide2,
+#buttons > #check3:checked ~ .slide3 {
+	opacity: 1;
+	z-index: 3;
+}
+
+#main {
+	position: relative;
+	display: flex;
+	width: 100%;
+}
+
+#menu {
+	width: 30%;
+}
+
+#allmenu {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.menu {
+	margin: 20px auto 10px;
+	border-radius: 15px;
+	width: 100%;
+}
+
+#maintext {
+	width: 100%;
+}
+
+#textcont {
+	font-size: 0.6em;
+	margin-top: 20px;
+	background-color: #FFFFFF;
+	color: #000000;
+	margin-left: 3%;
+	width: 90%;
+	display: inline-block;
+}
+
+#text {
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: justify;
+}
+
+
+.good {
+	background-color: gray;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	margin-top: 55px;
+	height: 350px;
+	width: 100%;
+	color: #000000;
+	font-size: 24px;
+	display: flex;
+}
+
+.goodsitem {
+	height: 300px;
+	border: 1px solid #000000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.good > img {
+	height: 300px;
+}
+}
+.goodsall1337{
+	font-size: 20px;
+}
+.good > p {
+	margin: 50px;
+}
+
+.good > div {
+	margin-left: 10%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+label {
+	width:23%;
+	float:left;
+	text-align:center;
+	background:#ffffff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	color:#222222;
+	padding:0.5%;
+	margin:0.5%;
+	margin-bottom:30px;
+	cursor:pointer;
+ }
+
+.filter {
+	display: none;
+}
+
+#goodsall:checked + label {
+	color: #FFFFFF;
+	background-color: #AAAAAA;
+}
+
+#goodsgyro:checked + label {
+	color: #FFFFFF;
+	background-color: #AAAAAA;
+}
+
+#goodsseg:checked + label {
+	color: #FFFFFF;
+	background-color: #AAAAAA;
+}
+
+#goodsel:checked + label {
+	color: #FFFFFF;
+	background-color: #AAAAAA;
+}
+
+#filter > #goodsgyro:checked ~ .seg,
+#filter > #goodsgyro:checked ~ .electro,
+#filter > #goodsseg:checked ~ .gyro,
+#filter > #goodsseg:checked ~ .electro,
+#filter > #goodsel:checked ~ .gyro,
+#filter > #goodsel:checked ~ .seg {
+	display: none;
+}
+
+.itemname {
+	cursor: pointer;
+	color: black;
+}
+
+.desc {
+	font-size: 16px;
+	color: black;
+}
+
+.price {
+	font-size: 36px;
+	color: white;
+}
+

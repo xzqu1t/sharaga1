@@ -8,7 +8,15 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/loader.css">
+	<link rel="stylesheet" href="assets/css/css.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<script src="assets/js/arrow.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+	  slideShow('.slider', {
+		isAutoplay: true
+	  });
+	</script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
 	<script type="text/javascript">
 	$(window).on('load', function () {
@@ -74,41 +82,60 @@
 			</div>
 		</section>
 		<section class="goods">
-			<div class="container">
+
 				<h2 class="section-title">Товары</h2>
-				<ul class="good-items clearfix">
-					<li class="good-item">
-						<img src="assets/images/gyroicon1.png" class="good-photo">
-						<p class="good-name">Гироскутер Smart Balance Pro 6.5</p>
-						<p class="good-price">6,990 руб</p>
-						<a href="#" class="btn btn-buy">Купить</a>
-					</li>
-					<li class="good-item">
-						<img src="images/sigwey-good.jpg" class="good-photo">
-						<p class="good-name">Гироскутер N5 BLACK Спортивный</p>
-						<p class="good-price">7,990 руб</p>
-						<a href="#" class="btn btn-buy">Купить</a>
-					</li>
-					<li class="good-item">
-						<img src="images/scooter.jpg" class="good-photo">
-						<p class="good-name">Электросамокат KUGOO G1 18.2 Ah</p>
-						<p class="good-price">63,500 руб</p>
-						<a href="#" class="btn btn-buy">Купить</a>
-					</li>
-					<li class="good-item">
-						<img src="images/giroscoot1.jpg" class="good-photo">
-						<p class="good-name">Мини-Сигвей MiniRobot <br> Mini PRO Белый</p>
-						<p class="good-price">14,490 руб</p>
-						<a href="#" class="btn btn-buy">Купить</a>
-					</li>
-				</ul>
-				<div class="filter">
-					<a href="#" class="filter-item">Все</a>
-					<a href="#" class="filter-item">Гироскутеры</a>
-					<a href="#" class="filter-item">Сигвеи</a>
-					<a href="#" class="filter-item">Электросамокаты</a>
-				</div>
-			</div>
+				<div id="maintext">
+					<div id="textcont">
+						<div id="filter">
+						<input type="radio" name="goods" id="goodsall" class="filter" checked>
+						<label for="goodsall"><b class="goodsall1337">Все</b></label>
+						<input type="radio" name="goods" id="goodsgyro" class="filter">
+						<label class="goodsall1337" for="goodsgyro">Гироскутеры</label>
+						<input type="radio" name="goods" id="goodsseg" class="filter">
+						<label class="goodsall1337" for="goodsseg">Сигвеи</label>
+						<input type="radio" name="goods" id="goodsel" class="filter">
+						<label class="goodsall1337" 1111for="goodsel">Электросамокаты</label>
+						<div class="good gyro">
+							<div class="goodsitem"><img src="images/good1.png"></div>
+							<div><p class="itemname">Гироскутер GT Smart Wheel 10,5 разноцветная молния</p>
+							<p class="desc">Просто гироскутер1</p>
+							<p class="price">Цена: 10999 руб.</p></div>
+						</div>
+						<div class="good gyro">
+							<div class="goodsitem"><img src="images/good2.png"></div>
+							<div><p class="itemname">Гироскутер GT Smart Wheel 10,5 Синий космос</p>
+							<p class="desc">Просто гироскутер2</p>
+							<p class="price">Цена: 12999 руб.</p></div>
+						</div>
+						<div class="good seg">
+							<div class="goodsitem"><img src="images/good3.png"></div>
+							<div><p class="itemname">Сигвей PUNUO A8 Черный с желтой Doodli</p>
+							<p class="desc">Просто сигвей1</p>
+							<p class="price">Цена: 429999 руб.</p></div>
+						</div>
+						<div class="good seg">
+							<div class="goodsitem"><img src="images/good4.png"></div>
+							<div><p class="itemname">Сегвей Airwheel S8</p>
+							<p class="desc">Просто сигвей2</p>
+							<p class="price">Цена: 529999 руб.</p></div>
+						</div>
+						<div class="good electro">
+							<div class="goodsitem"><img src="images/good5.png"></div>
+							<div><p class="itemname">Электросамокат Kugoo S4 Jilong</p>
+							<p class="desc">Просто электросамокат1</p>
+							<p class="price">Цена: 1999 руб.</p></div>
+						</div>
+						<div class="good electro">
+							<div class="goodsitem"><img src="images/good6.png"></div>
+							<div><p class="itemname">Электросамокат Kugoo S3 PRO Jilong</p>
+							<p class="desc">Просто электросамокат2</p>
+							<p class="price">Цена: 2999 руб.</p></div>
+						</div>
+					</div>
+					</div>
+
+
+			
 		</section>
 		<section class="consultants">
 			<div class="container">
@@ -211,12 +238,6 @@
 		</section>
 	</main>
 
-	<script src="assets/js/arrow.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script>
-	  slideShow('.slider', {
-		isAutoplay: true
-	  });
-	</script>
+
 </body>
 </html>

@@ -130,16 +130,3 @@ body {
     width: 100%;
   }
    
-  #arrowTop {
-    height: 9px;
-    width: 14px;
-    color: blue;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-  }
-
-  #arrowTop::before {
-    content: '▲';
-  }

@@ -336,3 +336,9 @@ body {
 	border: none;
 }
 
+.loader228{
+	display: block; 
+	width: 200%; 
+	height: 200%; 
+	margin: 0 auto;
+}

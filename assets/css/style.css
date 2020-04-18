@@ -44,6 +44,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 35px;
+	text-align: center;
+	margin-bottom: 90px;
 }
 
 /* === Шапка сайта === */
@@ -102,7 +104,7 @@ body {
 .feature-item {
 	float: left;
 	width: 266px;
-	border-right: 1px solid black;
+	border-right: 1px solid gray;
 	text-align: center;
 	color: white;	
 }

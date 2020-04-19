@@ -4,14 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My-Giro</title>
+	<script src="assets/js/main.js"></script>
 	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/loader.css">
 	<link rel="stylesheet" href="assets/css/css.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<script src="assets/js/arrow.js"></script>
-	<script src="assets/js/main.js"></script>
 	<script>
 	  slideShow('.slider', {
 		isAutoplay: true
@@ -52,6 +51,12 @@
 				</div>
 			  </div>
 			</div>
+			  <script src="assets/js/main.js"></script>
+  <script>
+    slideShow('.slider', {
+      isAutoplay: true
+    });
+  </script>
 			<a class="slider__control slider__control_prev" href="#" role="button"></a>
 			<a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
 		  </div>
@@ -181,7 +186,7 @@
 		</section>
 		<section class="reviews">
 			<div class="container">
-				<h2 class="section-title">Отзывы</h2>
+				<h2 class="section-title2">Информация которая полезная</h2>
 				<ul class="review-items clearfix">
 					<li class="review-item">
 						<img src="assets/images/block1.jpg" class="review-photo" width="200px" height="200px">
@@ -234,7 +239,35 @@
 			</div>
 		</section>
 	</main>
-
-
+	<DIV ID = "toTop" > ^ Наверх </ DIV >
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 
+	<script type="text/javascript">
+	 
+	$(function() {
+	 
+	$(window).scroll(function() {
+	 
+	if($(this).scrollTop() != 0) {
+	 
+	$('#toTop').fadeIn();
+	 
+	} else {
+	 
+	$('#toTop').fadeOut();
+	 
+	}
+	 
+	});
+	 
+	$('#toTop').click(function() {
+	 
+	$('body,html').animate({scrollTop:0},800);
+	 
+	});
+	 
+	});
+	 
+	</script>
 </body>
 </html>

@@ -47,7 +47,14 @@ body {
 	text-align: center;
 	margin-bottom: 90px;
 }
-
+.section-title2 {
+	margin: 0;
+	padding: 0;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 90px;
+	color: gray;
+}
 /* === Шапка сайта === */
 
 .main-header {
@@ -274,3 +281,20 @@ body {
 .marginn22{
 	margin-left: 21%;
 }
+
+
+#toTop {
+	width:100px;
+	border:1px solid #ccc;
+	background:#f7f7f7;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:10px; /* отступ кнопки от нижнего края страницы*/
+	right:10px;
+	cursor:pointer;
+	display:none;
+	color:#333;
+	font-family:verdana;
+	font-size:11px;
+	}

@@ -99,8 +99,7 @@
 }
 
 .goodsitem {
-	height: 300px;
-	border: 1px solid #000000;
+	
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -108,7 +107,7 @@
 .good > img {
 	height: 300px;
 }
-}
+
 .goodsall1337{
 	font-size: 20px;
 }
@@ -183,3 +182,8 @@ label {
 	color: white;
 }
 
+.images_items {
+	width: 50%;
+	height: 50%;
+	border: 10px double rgb(71, 71, 71);
+}

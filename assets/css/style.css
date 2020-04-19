@@ -31,7 +31,7 @@ body {
 
 .btn {
 	display: block;
-	background-color: #6670CC;
+	background-color: rgb(88, 88, 88);
 	border-radius: 5px;
 	padding: 8px 20px;
 	font: inherit;
@@ -134,7 +134,7 @@ body {
 
 .consultants {
 	padding: 50px 0;
-	background-color: #A3B7E0;
+	background-color: rgb(107, 107, 107);
 }
 
 .consultant-items {
@@ -168,7 +168,7 @@ body {
 
 .brands {
 	padding: 50px 30px;
-	background-color: #3C54B4;
+	background-color: rgb(48, 48, 48);
 }
 
 .brand-items {
@@ -218,13 +218,14 @@ body {
 .review-description {
 	max-width: 300px;
 	text-align: left;
+	color: black;
 }
 
 /* === Блок с формой === */
 
 .feedback {
 	padding: 70px 0 100px;
-	background-color: #A3B7E0;
+	background-color: rgb(133, 133, 133);
 }
 
 .compain-description {
@@ -254,7 +255,7 @@ body {
 	box-sizing: border-box;
 	font: inherit;
 	font-weight: bold;
-	background-color: #88A4D7;
+	background-color: rgb(182, 182, 182);
 	border: none;
 }
 
@@ -268,4 +269,8 @@ body {
 	width: 200%; 
 	height: 200%; 
 	margin: 0 auto;
+}
+
+.marginn22{
+	margin-left: 21%;
 }
